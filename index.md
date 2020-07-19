@@ -669,21 +669,21 @@ train(mnist_generator_single, epoch_num=100, batch_size=BATCH_SIZE, use_gpu=True
 
 
 
-![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/GAN-Implementation-and-Experience/master/pics/output_18_1.png)
 
 
     epoch = 57 , batch = 4 , real_d_loss = [0.3164166] , fake_d_loss = [0.4096159] g_loss = [1.4068363]
 
 
 
-![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_3.png)
+![png](https://raw.githubusercontent.com/ctkindle/GAN-Implementation-and-Experience/master/pics/output_18_3.png)
 
 
     epoch = 85 , batch = 24 , real_d_loss = [0.22499837] , fake_d_loss = [0.29156905] g_loss = [1.6917844]
 
 
 
-![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_5.png)
+![png](https://raw.githubusercontent.com/ctkindle/GAN-Implementation-and-Experience/master/pics/output_18_5.png)
 
 
 跑了几轮发现生成网络无法生成所有数字类别，2和8比较容易生成。其他的数字，有些试了10来次每次都出现“输出全黑”。
