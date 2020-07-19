@@ -123,7 +123,7 @@ print('一个batch噪声z的形状：batch_size =', len(z_tmp), ', data_shape ='
 
 
 
-![png](output_5_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_5_1.png)
 
 
 **2.实现GAN的主体--生成器G和判别器D**
@@ -262,7 +262,7 @@ with fluid.dygraph.guard():
 
 
 
-![png](output_9_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_9_1.png)
 
 
 
@@ -291,7 +291,7 @@ show_image_grid(tmp_g, BATCH_SIZE)
 ```
 
 
-![png](output_10_0.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_10_0.png)
 
 
 
@@ -318,7 +318,7 @@ plt.imshow(concatenate_img(tmp_g))
 
 
 
-![png](output_11_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_11_1.png)
 
 
 **3.开始训练GAN网络**
@@ -471,63 +471,63 @@ train(mnist_generator, epoch_num=20, batch_size=BATCH_SIZE, use_gpu=True)
 
 
 
-![png](output_13_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_1.png)
 
 
     epoch = 4 , batch = 127 , real_d_loss = [0.03909737] , fake_d_loss = [0.06267369] g_loss = [3.0091727]
 
 
 
-![png](output_13_3.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_3.png)
 
 
     epoch = 6 , batch = 191 , real_d_loss = [0.01486035] , fake_d_loss = [0.03086974] g_loss = [3.743864]
 
 
 
-![png](output_13_5.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_5.png)
 
 
     epoch = 8 , batch = 255 , real_d_loss = [0.086999] , fake_d_loss = [0.14372507] g_loss = [2.5688832]
 
 
 
-![png](output_13_7.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_7.png)
 
 
     epoch = 10 , batch = 319 , real_d_loss = [0.08311941] , fake_d_loss = [0.2403567] g_loss = [1.9954624]
 
 
 
-![png](output_13_9.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_9.png)
 
 
     epoch = 12 , batch = 383 , real_d_loss = [0.14879018] , fake_d_loss = [0.29707614] g_loss = [1.7317948]
 
 
 
-![png](output_13_11.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_11.png)
 
 
     epoch = 14 , batch = 447 , real_d_loss = [0.17426533] , fake_d_loss = [0.36188668] g_loss = [1.5775356]
 
 
 
-![png](output_13_13.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_13.png)
 
 
     epoch = 17 , batch = 43 , real_d_loss = [0.15387994] , fake_d_loss = [0.30026525] g_loss = [1.7300353]
 
 
 
-![png](output_13_15.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_15.png)
 
 
     epoch = 19 , batch = 107 , real_d_loss = [0.22448821] , fake_d_loss = [0.37466788] g_loss = [1.6089951]
 
 
 
-![png](output_13_17.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_13_17.png)
 
 
 **4.用VisualDL2.0观察训练**
@@ -669,21 +669,21 @@ train(mnist_generator_single, epoch_num=100, batch_size=BATCH_SIZE, use_gpu=True
 
 
 
-![png](output_18_1.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_1.png)
 
 
     epoch = 57 , batch = 4 , real_d_loss = [0.3164166] , fake_d_loss = [0.4096159] g_loss = [1.4068363]
 
 
 
-![png](output_18_3.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_3.png)
 
 
     epoch = 85 , batch = 24 , real_d_loss = [0.22499837] , fake_d_loss = [0.29156905] g_loss = [1.6917844]
 
 
 
-![png](output_18_5.png)
+![png](https://raw.githubusercontent.com/ctkindle/CV-Data-Augmentation-3-SMOTE/master/pics/output_18_5.png)
 
 
 跑了几轮发现生成网络无法生成所有数字类别，2和8比较容易生成。其他的数字，有些试了10来次每次都出现“输出全黑”。
